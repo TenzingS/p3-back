@@ -24,9 +24,5 @@ class ApplicationController < Sinatra::Base
     stock.to_json
   end
 
-  patch "/user/:id" do
-    user = User.find(params[:id])
-    user.to_json
-  end
   
 end
