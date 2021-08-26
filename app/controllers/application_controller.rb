@@ -14,7 +14,7 @@ class ApplicationController < Sinatra::Base
   end
 
   post "/stocks" do
-    stocks = Stock.create(name: params[:name], price: params[:price], user_id: 0, logo_url: params[:logo_url])
+    stocks = Stock.create(name: params[:name], price: params[:price], user_id: 0, logo_url: params[:logo_url], shares:0)
     stocks.to_json
   end
 
