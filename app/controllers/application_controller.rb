@@ -20,7 +20,7 @@ class ApplicationController < Sinatra::Base
 
   patch "/stocks/:id" do
     stock = Stock.find(params[:id])
-    stock.update(user_id: params[:user_id], shares: params[:shares])
+    stock.update(user_id: params[:user_id], shares: params[:shares], price: params[:price])
     stock.to_json
   end
 
@@ -28,6 +28,12 @@ class ApplicationController < Sinatra::Base
     user = User.find(params[:id])
     user.update(funds: params[:funds])
     user.to_json
+  end
+
+  patch "/stocks" do
+    stocks = Stock.all.order(:name)
+    stocks.update()
+    stocks.to_json
   end
 
 
