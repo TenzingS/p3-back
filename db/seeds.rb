@@ -3,8 +3,8 @@ puts "🌱 Seeding spices..."
 
 # Seed your database here
 
-User.create(name: Faker::Name.name, funds: 1000 )
-
+# User.create(name: Faker::Name.name, funds: 1000 )
+User.create(name: 'Mr. Quant', funds: 3000 )
 # 5.times do
 #     Stock.create(
 #         name: Faker::Finance.ticker,
