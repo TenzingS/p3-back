@@ -17,7 +17,7 @@ User.create(name: 'Mr. Quant', funds: 3000 )
 
 Stock.create(
         name: "DOGE",
-        logo_url: "https://cdn.vox-cdn.com/thumbor/3UGNpIXF2EUtW6QGXHcfguJKr4Q=/21x0:539x345/1400x1050/filters:focal(21x0:539x345):format(png)/cdn.vox-cdn.com/assets/3727699/Dogecoin_logo.png",
+        logo_url: "https://c.tenor.com/ebKAIgVKAS4AAAAC/cool-doge-doge.gif",
         price: rand(1..1000),
         user_id: NIL,
         shares: 0
@@ -25,7 +25,7 @@ Stock.create(
 
 Stock.create(
         name: "APPL",
-        logo_url: "https://yt3.ggpht.com/ytc/AKedOLRIec7gUC89wc0OGstCraoIatVagBJHOpLW-n5QrQ=s900-c-k-c0x00ffffff-no-rj",
+        logo_url: "https://thumbs.gfycat.com/GoodAppropriateAlligator-size_restricted.gif",
         price: rand(1..1000),
         user_id: NIL,
         shares: 0
@@ -33,7 +33,7 @@ Stock.create(
 
 Stock.create(
         name: "AMZN",
-        logo_url: "https://images-na.ssl-images-amazon.com/images/I/31%2BDgxPWXtL.jpg",
+        logo_url: "https://userscontent2.emaze.com/images/bf46be59-4fc0-43b5-b751-d654d52860ba/88bf2cd9da2e3b94962d5d741979226b.gif",
         price: rand(1..1000),
         user_id: NIL,
         shares: 0
@@ -41,7 +41,7 @@ Stock.create(
 
 Stock.create(
         name: "MSFT",
-        logo_url: "http://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4OAgf?ver=6a31",
+        logo_url: "https://cdn.dribbble.com/users/2100764/screenshots/5549274/microsoft-logo-animation.gif",
         price: rand(1..1000),
         user_id: NIL,
         shares: 0
@@ -49,10 +49,17 @@ Stock.create(
 
 Stock.create(
         name: "GOOGL",
-        logo_url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxvgY-VCA7NYy7YrFV4Mkbmx8cFaNyaN-rPSC71tnal8KAya8GTIdWOzUYWyrSZMlf65Q&usqp=CAU",
+        logo_url: "https://cdn.vox-cdn.com/uploads/chorus_asset/file/4019334/OGB-INSIDER-BLOGS-GoogleLogox2-Animated.0.gif",
         price: rand(1..1000),
         user_id: NIL,
         shares: 0
 )
 
+Stock.create(
+        name: "BGCH",
+        logo_url: "https://c.tenor.com/JUiXaPL-bNoAAAAM/big-chungus.gif",
+        price: rand(1..1000),
+        user_id: NIL,
+        shares: 0
+)
 puts "Seeding done!"
