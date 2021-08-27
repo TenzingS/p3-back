@@ -4,7 +4,7 @@ puts "🌱 Seeding spices..."
 # Seed your database here
 
 # User.create(name: Faker::Name.name, funds: 1000 )
-User.create(name: 'Mr. Quant', funds: 3000 )
+User.create(name: 'Mr. $Paper Hands', funds: 3000 )
 # 5.times do
 #     Stock.create(
 #         name: Faker::Finance.ticker,
@@ -62,4 +62,37 @@ Stock.create(
         user_id: NIL,
         shares: 0
 )
+
+Stock.create(
+        name: "TSLA",
+        logo_url: "https://cdn.dribbble.com/users/2242484/screenshots/4634202/logotesla.gif",
+        price: rand(1..1000),
+        user_id: NIL,
+        shares: 0
+)
+
+Stock.create(
+        name: "FB",
+        logo_url: "https://i.pinimg.com/originals/89/67/d9/8967d993037b3608240346b4e46b86f9.gif",
+        price: rand(1..1000),
+        user_id: NIL,
+        shares: 0
+)
+
+Stock.create(
+        name: "GME",
+        logo_url: "https://static.wixstatic.com/media/34c1e9_db369e4bda8d4fb79026c5715bc01a59~mv2_d_3300_2550_s_4_2.gif",
+        price: rand(1..1000),
+        user_id: NIL,
+        shares: 0
+)
+
+Stock.create(
+        name: "BTC",
+        logo_url: "https://hollywoodunlocked.com/wp-content/uploads/2021/02/Bitcoin-Blockchain-Code.gif",
+        price: rand(1..1000),
+        user_id: NIL,
+        shares: 0
+)
+
 puts "Seeding done!"
